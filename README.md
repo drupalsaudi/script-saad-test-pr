@@ -22,4 +22,8 @@ This will clone the project and checkout the needful PR by PR number.
 
 To automate the same process and launch a new host using Lando you can use: `./saad-test-pr.sh 52 lando` and this command will create a lando file and starting the Docker for you, it will install the drupalsaudi profile also so you will just need to visit the website using the lando URL directly.
 
-Note: This is a test script so it is not handling the validations of the output, so please use it carefully.
+# Notes
+
+- This is a test script so it is not handling the validations of the output, so please use it carefully.
+- Don't miss to destroy your local image by running `lando destroy` after finish.
+- We may add `lando drush uli` at the end of this script for quick access to admin page and any other scripts like that.
