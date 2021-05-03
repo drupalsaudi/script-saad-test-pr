@@ -9,7 +9,7 @@ PROJECT_PROFILE="drupalsaudi"
 git clone https://github.com/drupalsaudi/saudi-distribution.git "pr$pr_number"
 cd "pr$pr_number"
 git checkout drupalsaudi-dev
-git fetch origin pull/$pr_number/head:pull_51
+git fetch origin pull/$pr_number/head:"pull_$pr_number"
 git checkout "pull_$pr_number"
 
 # with lando
